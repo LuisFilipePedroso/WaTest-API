@@ -5,8 +5,8 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "waproject-repository",
-    "seed": "git@bitbucket.org:waproject/waproject-base-api.git"
+    "url": "https://github.com/LuisFilipePedroso/FullStack-developer-Test---Wa-Project.git",
+    "seed": "git@bitbucket.org:waproject/test-luis-filipe-pedroso-api-api.git"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -92,13 +92,10 @@
     "eslint-config-prettier": "6.4.0",
     "eslint-plugin-prettier": "3.1.1",
     "husky": "3.0.9",
-    "inquirer": "7.0.0",
     "jest": "24.9.0",
     "jest-extended": "0.11.2",
     "npm-check-updates": "3.1.25",
-    "ora": "4.0.2",
     "prettier": "1.18.2",
-    "rimraf": "3.0.0",
     "supertest": "4.0.2",
     "ts-jest": "24.1.0",
     "ts-node": "8.4.1",
