@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { IOrder } from 'interfaces/models/order';
 import { IPaginationParams } from 'interfaces/pagination';
 import { Order } from 'modules/database/models/order';
 import { Page, Transaction } from 'objection';
