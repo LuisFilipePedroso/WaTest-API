@@ -5,15 +5,17 @@ import { DatabaseModule } from 'modules/database/module';
 import { AuthController } from './controllers/auth';
 import { TestController } from './controllers/test';
 import { UserController } from './controllers/user';
+import { OrderController } from './controllers/order';
 import { RenewTokenMiddleware } from './middlewares/renewToken';
 import { UserRepository } from './respoitories/user';
+import { OrderRepository } from './respoitories/order';
 import { AuthService } from './services/auth';
 import { UserService } from './services/user';
 
 @Module({
   imports: [HttpModule, CommonModule, DatabaseModule],
-  controllers: [AuthController, UserController, TestController],
-  providers: [AuthService, UserRepository, UserService]
+  controllers: [AuthController, UserController, TestController, OrderController],
+  providers: [AuthService, UserRepository, OrderRepository, UserService]
 })
 export class AdminModule implements NestModule {
   public configure(consumer: MiddlewareConsumer) {
